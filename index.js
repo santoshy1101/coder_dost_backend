@@ -53,5 +53,5 @@ server.put('/products/:id', usersController.replaceUser)
 server.delete('/products/:id', usersController.deleteUser)
 
 server.listen(process.env.PORT, () => {
-  console.log('Server is running on port 8080')
+  console.log('Server is running on port',process.env.PORT)
 })
