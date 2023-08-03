@@ -6,7 +6,7 @@ console.log(Product)
 
 exports.getAllUsers = async (req, res) => {
   const products = await Product.find()
-  console.log(products)
+  // console.log(products)
   res.send(products)
 }
 exports.getUser = async (req, res) => {

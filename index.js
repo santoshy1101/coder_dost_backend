@@ -3,6 +3,16 @@ const express = require('express')
 const usersController = require("./controller/users")
 const server = express()
 const mongoose = require('mongoose');
+const cors = require("cors");
+
+
+server.use(cors(
+  {
+    origin:"https://deploy-mern-1whq.vercel.app",
+    methods:["GET", "POST" ,"PUT","PATCH", "DELETE"],
+    credentials : true
+  }
+));
 
 main().catch(err => console.log("err",err));
 
