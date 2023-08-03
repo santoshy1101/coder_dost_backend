@@ -1,5 +1,4 @@
 // read C R U D
-let users = require('../data.json')
 const model = require('../model/product')
 const Product = model.Prodouct
 console.log(Product)
@@ -11,14 +10,14 @@ exports.getAllUsers = async (req, res) => {
 }
 exports.getUser = async (req, res) => {
   const id = req.params.id
-  console.log(id)
+  // console.log(id)
   const product = await Product.find({ _id: id })
   res.send(product)
 }
 
 // create
 exports.createUser = async (req, res) => {
-  console.log('create user')
+  // console.log('create user')
   const product = new Product(req.body)
   await product.save()
   res.send(product)
