@@ -24,7 +24,7 @@ async function main() {
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
 
-// console.log(process.env.DB_PASSWORD)
+
 server.use(express.json()) // Cannot read properties of undefined  thats why use
 // APi  Endpoint Route
 
