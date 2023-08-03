@@ -8,7 +8,7 @@ const cors = require("cors");
 
 server.use(cors(
   {
-    origin:"https://deploy-mern-1whq.vercel.app",
+    origin:"",
     methods:["GET", "POST" ,"PUT","PATCH", "DELETE"],
     credentials : true
   }
