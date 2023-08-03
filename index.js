@@ -41,9 +41,12 @@ server.use(express.json()) // Cannot read properties of undefined  thats why use
 // server.use(auth)
 
 
-
+server.get('/',(req,res)=>{
+  res.send("server connnected")
+  })
 server.post('/products', usersController.createUser)
 server.get('/products', usersController.getAllUsers)
+
 server.get('/products/:id', usersController.getUser)
 server.patch('/products/:id', usersController.updateUser)
 server.put('/products/:id', usersController.replaceUser)
